@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import styles from '@/app/ui/home.module.css';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${styles.body}`}>{children}</body>
+      <body className={`${inter.className} ${styles.body}`}>
+        <SpeedInsights />
+        {children}
+      </body>
     </html>
   );
 }
