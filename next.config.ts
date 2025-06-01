@@ -5,5 +5,8 @@ const nextConfig: NextConfig = {
     ppr: 'incremental'
   }
 };
+module.exports ={
+    output:"standalone",
+};
 
 export default nextConfig;
