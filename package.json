@@ -31,5 +31,11 @@
     "@types/react-dom": "19.0.3",
     "eslint": "^9.27.0",
     "eslint-config-next": "15.3.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "sharp"
+    ]
   }
 }
